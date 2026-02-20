@@ -1,32 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rohit Singh | Portfolio</title>
-    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
-    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-black text-white">
-    <div id="root"></div>
+const Hero = () => {
+  return (
+    <section className="bg-black text-white py-20 px-10 flex flex-col items-center justify-center min-h-[60vh] text-center">
+      <h1 className="text-5xl md:text-7xl font-bold mb-4">Creative Developer</h1>
+      <p className="text-gray-400 text-lg md:text-xl max-w-2xl">
+        Building modern, minimal, and high-performance digital experiences for the next generation of the web.
+      </p>
+      <div className="mt-8 flex gap-4">
+        <button className="bg-white text-black px-6 py-2 rounded-full font-semibold">View Work</button>
+        <button className="border border-white px-6 py-2 rounded-full font-semibold">Contact Me</button>
+      </div>
+    </section>
+  );
+};
 
-    <script type="text/babel" src="Hero.jsx"></script>
-    
-    <script type="text/babel">
-        function App() {
-            return (
-                <div>
-                    {/* जब Hero.jsx साफ हो जाएगी, यह यहाँ दिखने लगेगा */}
-                    <Hero />
-                </div>
-            );
-        }
-
-        const root = ReactDOM.createRoot(document.getElementById('root'));
-        root.render(<App />);
-    </script>
-</body>
-</html>
-  
+// इसे चलाने के लिए यह लाइन जरूरी है
+window.Hero = Hero;
