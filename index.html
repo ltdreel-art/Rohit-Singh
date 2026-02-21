@@ -3,50 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rohit Singh Portfolio</title>
+    <title>Rohit Singh | Official Artist</title>
     <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
     <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
-<body>
+<body class="bg-black text-white font-sans">
     <div id="root"></div>
-    <script type="text/babel">
-        // --- Navigation ---
-        const Navigation = () => (
-            <nav className="p-5 bg-gray-900 text-white flex justify-between">
-                <h1 className="text-xl font-bold">Rohit Singh</h1>
-                <div className="space-x-4">
-                    <a href="#about">About</a>
-                    <a href="#contact">Contact</a>
-                </div>
-            </nav>
-        );
-
-        // --- Hero Section ---
-        const Hero = () => (
-            <div className="h-96 flex flex-col items-center justify-center bg-black text-white">
-                <h2 className="text-5xl font-extrabold">Creative Developer</h2>
-                <p className="mt-4 text-gray-400">Building digital experiences</p>
-            </div>
-        );
-
-        // --- Main App ---
-        function App() {
-            return (
-                <div>
-                    <Navigation />
-                    <Hero />
-                    <div className="p-10 text-center">
-                        <h3 id="about" className="text-2xl font-bold">About Me</h3>
-                        <p className="mt-4 text-gray-600">Hi, I'm Rohit Singh, a passionate developer.</p>
-                    </div>
-                </div>
-            );
-        }
-
-        const root = ReactDOM.createRoot(document.getElementById('root'));
-        root.render(<App />);
-    </script>
+    <script type="text/babel" src="App.js"></script>
 </body>
 </html>
